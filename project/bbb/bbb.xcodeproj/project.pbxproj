@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D6F1F2131F0E147400A61981 /* bbb.c in Sources */ = {isa = PBXBuildFile; fileRef = D6F1F2111F0E147400A61981 /* bbb.c */; };
-		D6F1F2141F0E147400A61981 /* bbb.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F1F2121F0E147400A61981 /* bbb.h */; };
+		D6F1F2141F0E147400A61981 /* bbb.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F1F2121F0E147400A61981 /* bbb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6F1F2171F0E156800A61981 /* libaaa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F1F2161F0E156800A61981 /* libaaa.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D6F1F2091F0E146100A61981 /* libbbb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbbb.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F1F2111F0E147400A61981 /* bbb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bbb.c; path = ../../src/bbb.c; sourceTree = "<group>"; };
 		D6F1F2121F0E147400A61981 /* bbb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bbb.h; path = ../../src/bbb.h; sourceTree = "<group>"; };
+		D6F1F2161F0E156800A61981 /* libaaa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaaa.a; path = "../../ext/xcode-build-test-aaa/project/aaa/build/Debug/libaaa.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +24,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F1F2171F0E156800A61981 /* libaaa.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +36,7 @@
 			children = (
 				D6F1F2101F0E146600A61981 /* src */,
 				D6F1F20A1F0E146100A61981 /* Products */,
+				D6F1F2151F0E156800A61981 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +55,14 @@
 				D6F1F2121F0E147400A61981 /* bbb.h */,
 			);
 			name = src;
+			sourceTree = "<group>";
+		};
+		D6F1F2151F0E156800A61981 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6F1F2161F0E156800A61981 /* libaaa.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +234,7 @@
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include/bbb;
 			};
 			name = Debug;
 		};
@@ -230,6 +243,7 @@
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include/bbb;
 			};
 			name = Release;
 		};
@@ -252,6 +266,7 @@
 				D6F1F20F1F0E146100A61981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
