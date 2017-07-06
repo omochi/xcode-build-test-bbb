@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D6F1F2131F0E147400A61981 /* bbb.c in Sources */ = {isa = PBXBuildFile; fileRef = D6F1F2111F0E147400A61981 /* bbb.c */; };
 		D6F1F2141F0E147400A61981 /* bbb.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F1F2121F0E147400A61981 /* bbb.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D6F1F2171F0E156800A61981 /* libaaa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F1F2161F0E156800A61981 /* libaaa.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +23,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6F1F2171F0E156800A61981 /* libaaa.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
